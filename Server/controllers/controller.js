@@ -139,6 +139,7 @@ class Controller {
 
   static async login(req, res, next) {
     try {
+      // console.log("test masuk login");
       const { email, password } = req.body;
       if (!email || !password) {
         throw { message: "Email or password is required" };
